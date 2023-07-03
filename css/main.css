@@ -114,11 +114,75 @@
 .play{
     width: 100%;
     height: 90vh;
-    background: #d35d5d;
+    background: #e6e6e6;
     position: absolute;
     right: 0;
     bottom: 0;
     transform: translateX(100%);
+    z-index: 10;
+    overflow-y: scroll;
+    transition: all .5s ease-in-out;
+}
+.backbtn{
+    width: 100%;
+    height: 10vh;
+}
+.backbtn i{
+    cursor: pointer;
+}
+.backbtn i:hover{
+    color: var(--primary-color);
+}
+.img-box{
+    width: 300px;
+    height: auto;
+    padding: 5px;
+}
+.img-box img{
+    width: 17%;
+    border-radius: 8px;
+}
+.img-box .title{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.img-box .author{
+    font-size: 15px;
+    font-weight: 500;
+    color: #777;
+}
+.control-box{
+    width: 250px;
+    height: auto;
+    padding: 5px;
+}
+.control-box input[type=range]{
+    width: 240px;
+    height: 4px;
+}
+.control-box .time-box{
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--gray);
+    width: 240px;
+    height: auto;
+}
+
+.remote-box{
+    width: 250px;
+    height: auto;
+    padding: 8px 5px;
+    font-size: 20px;
+}
+.remote-box .bi-play-circle{
+    font-size: 35px;
+}
+.bi-volume-up, .bi-chevron-bar-left, .bi-chevron-bar-right, .bi-play-circle, .bi-shuffle{
+    cursor: pointer;
+}
+.bi-volume-up:hover, .bi-chevron-bar-left:hover, .bi-chevron-bar-right:hover, .bi-play-circle:hover, .bi-shuffle:hover{
+    color: var(--secondary-color);
 }
 /* end of player  */
 
@@ -145,12 +209,16 @@
         height: 80vh;
     }
     .navbars .logo{
-        width: 80%;
+        width: 60%;
     }
     .swiper-slide img {
         display: block;
         width: 400px;
         object-fit: cover;
+    }
+    .img-box img{
+        width: 40%;
+        border-radius: 8px;
     }
 }
 
@@ -218,3 +286,21 @@
   .swiper-slide:nth-child(3n) {
     width: 20%;
   } */
+
+
+.music-btn{
+    display: none;
+    position: absolute;
+    z-index: 5;
+    top: 10%;
+    right: 0;
+    padding: .6rem 1.2rem;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    cursor: pointer;
+}
+.music-btn.active{
+    display: block;
+}

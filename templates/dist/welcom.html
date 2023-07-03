@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AudiBook | Welcome</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/welcome.css">
+    <link rel="icon" href="../../img/icons/logo.svg">
+</head>
+<style>
+
+</style>
+<body>
+    <div class="container-fluid position-relative">
+
+        <!-- page 1 -->
+        <div class="loading row ">
+            <div class="page1 col-12 d-flex align-items-center justify-content-center flex-column">
+                <img src="../../img/icons/logo.svg" class="logo mb-5" alt="">
+                <span class="mb-5"><small>Version 1.0.0</small></span>
+                <div class="">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of page 1 -->
+
+        <!-- page 2  -->
+        <div class="row">
+            <div class="page2 col-12 d-flex align-items-center justify-content-center flex-column">
+                <div class="swiper mySwiper mb-3">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide d-flex flex-column">
+                        <img src="../../img/icons/wel1.svg" alt="">
+                        <div class="content">
+                            <h3>Exploring Consciousness</h3>
+                            <p>An audiobook that takes you on a captivating journey into the depths of human awareness.</p>
+                        </div>
+                    </div>
+                      <div class="swiper-slide d-flex flex-column">
+                        <img src="../../img/icons/wel2.svg" alt="">
+                        <div class="content">
+                            <h3>Mindful Meditations: Discovering Inner Peace</h3>
+                            <p> an audiobook that invites you on a journey of
+                                self-discovery and tranquility. </p>
+                        </div>
+                    </div>
+                      <div class="swiper-slide d-flex flex-column final">
+                        <img src="../../img/icons/wel3.svg" alt="">
+                        <div class="content">
+                            <h3>The Joy of Reading</h3>
+                            <p>Aan audiobook that honors the timeless pleasure 
+                                of storytelling</p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="navi d-flex align-items-center justify-content-center">
+                    <a href="./personalize.html" class="skip">Skip</a>
+                    <button class="next nextBtn ms-5">Next</button>
+                    <a href="./personalize.html" class="getstart d-none">Let's Get Started</a>
+                </div>
+            </div>
+        </div>
+        <!-- end of page 2  -->
+
+    </div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+                
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    navigation: {
+      nextEl: ".next",
+    },
+  });
+</script>
+<script src="../../js/welcome.js"></script>
+</body>
+</html> 

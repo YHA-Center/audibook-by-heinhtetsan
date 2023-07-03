@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primary-color: #4838D1;
+    --primary-light-color: rgba(120, 107, 242, 0.5);
+    --secondary-color: #F77A55;
+    --gray: #555;
+}
+
+.container-fluid{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* page 1  */
+.page1{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 5;
+}
+.page1 .logo{
+    width: 10%;
+}
+.page1 span{
+    font-weight: 600;
+    color: var(--primary-color);
+}
+/* end of page 1  */
+
+
+/* page 2  */
+
+.page2{
+    width: 100%;
+    height: 100vh;
+}
+
+.next{
+    padding: 9px 22px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.skip{
+    padding: 9px 22px;
+    border: none;
+    border-radius: 6px;
+    background-color: transparent;
+    color: var(--primary-color);
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+}
+.skip:hover{
+    background-color: #ddd;
+}
+.next:hover{
+    background-color: var(--primary-light-color);
+}
+.getstart{
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+}
+.getstart:hover{
+    background-color: var(--primary-light-color);
+}
+
+/* swiper  */
+.swiper {
+    width: 500px;
+    height: 70vh;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 65%;
+    object-fit: cover;
+  }
+
+  .swiper-slide h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-top: 5px;
+  }
+  .swiper-slide p{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--gray);
+    padding: 0 1rem;
+  }
+
+  @media screen and (max-width:430px){
+    .page1 .logo{
+        width: 30%;
+    }
+    .swiper {
+        width: 400px;
+        height: 60vh;
+    }
+    .swiper-slide img{
+        width: 73%;
+    }
+  }
+
+/* end of page 2  */

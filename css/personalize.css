@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    transition: all .4s ease-in-out;
+}
+
+:root{
+    --primary-color: #4838D1;
+    --primary-light-color: rgba(120, 107, 242, 0.5);
+    --secondary-color: #F77A55;
+    --gray: #555;
+}
+
+.container-fluid{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.circle-dot{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+}
+.circle{
+    position: absolute;
+    top: 3rem;
+    width: 5%;
+    right: 0;
+}
+
+/* page one goes here  */
+.page1{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* form start here  */
+.page1 .form{
+    width: 390px;
+}
+.page1 .form span{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+.page1 .form h3{
+    font-size: 45px;
+    font-weight: 200;
+    color: var(--primary-color);
+}
+.page1 .form p{
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--gray);
+}
+.page1 .btn-box .personalize{
+    width: 100%;
+    height: 45px;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.page1 .btn-box span{
+    width: 100%;
+    height: 45px;
+    text-decoration: none;
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.page1 .btn-box .personalize:hover{
+    background-color: var(--primary-light-color);
+}
+.page1 .btn-box span:hover{
+    background-color: #eee;
+}
+/* end of form goes here  */
+
+/* end of page one goes here  */
+
+/* page 2 goes here  */
+.page2{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.page2 .form{
+    width: 390px;
+}
+.page2 .form h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.page2 .form p{
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--gray);
+}
+.page2 .form input{
+    width: 100%;
+    height: 50px;
+    background-color: #f4f4f4;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 4px 15px;
+    transition: none !important;
+}
+.page2 .form input::placeholder{
+    font-size: 14px;
+    font-weight: 500;
+    color: #bbb;
+
+}
+.page2 .form input:focus{
+    outline: 2px solid var(--primary-color);
+}
+.page2 .btn-box .submit{
+    width: 100%;
+    height: 45px;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary-light-color);
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.page2 .btn-box .submit.active{
+    background-color: var(--primary-color);
+}
+.page2 .btn-box span{
+    width: 100%;
+    height: 45px;
+    text-decoration: none;
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.page2 .btn-box span:hover{
+    background-color: #eee;
+}
+.cat-box{
+    width: 100%;
+    height: auot;
+    padding: 5px 5px;
+}
+.cat-box .categroy{
+    text-decoration: none;
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    color: var(--primary-color);
+    padding: 3px 6px;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+}
+.cat-box .categroy.active{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+/* end of page 2 goes here  */
+
+/* page 3 goes here  */
+
+.page3{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page3 .form{
+    width: 390px;
+}
+.page3 .form h3{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.page3 .form p{
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--gray);
+}
+.page3 .form img{
+    width: 80%;
+}
+.page3 .btn-box .finish{
+    width: 100%;
+    height: 45px;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.page3 .btn-box .finish:hover{
+    background-color: var(--primary-light-color);
+}
+/* end of page 3 goes here  */
+
+@media screen and (max-width: 450px){
+    .circle{
+        width: 18%;
+        top: 5rem;
+    }
+    .circle-dot{
+        width: 40%;
+    }
+}

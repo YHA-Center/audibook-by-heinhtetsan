@@ -258,9 +258,9 @@
 
 
 
-@media screen and (max-width:440px){
+@media screen and (max-width:400px){
     .main-home-page{
-        height: 119vh;
+        height: 129vh;
     }
     .logo{
         width: 80%;

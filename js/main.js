@@ -3,6 +3,8 @@ const musicPiece = document.querySelector(".music-btn");
 const playerFrame = document.querySelector(".play");
 const play_backBtn = document.querySelector(".for-play");
 const read_backBtn = document.querySelector(".for-read");
+const search_backBtn = document.querySelector(".for-search");
+const read_content_backBtn = document.querySelector(".for-read-content");
 const playBtn = document.querySelector(".bi-play-circle");
 const pauseBtn = document.querySelector(".bi-pause-circle");
 const closeBtn = document.querySelector(".bi-x-circle");
@@ -12,8 +14,16 @@ const rangeBar = document.querySelector("#range");
 const rangeControl = document.querySelector("#range2");
 const read_playBtn = document.querySelector(".btn-gp .play-audio");
 const read_readBtn = document.querySelector(".btn-gp .read-book");
-const summary = document.querySelector(".summ-content");
-const readBox = document.querySelector(".read")
+const summary = document.querySelector(".read .summ-content");
+const readBoook = document.querySelector(".read-content .summ-content");
+const readBox = document.querySelector(".read");
+const readNovel = document.querySelector(".read .read-book");
+const readContent = document.querySelector(".read-content");
+const asideBtns = document.querySelectorAll(".aside-btn");
+const searchCont = document.querySelector(".search-box");
+const settingCont = document.querySelector(".setting-box");
+const settingBack = document.querySelector(".for-setting");
+const gearBtn = document.querySelector(".setting");
 
 let recommanded =[
     {name: "Atomic Habit", author: "Jomes Clear", path: "../script/atomic-habit.txt"}
@@ -35,6 +45,43 @@ read_backBtn.addEventListener("click", () => {
     readBox.style.transform = "translateX(100%)";
 })
 
+read_content_backBtn.addEventListener("click", () => {
+    readContent.style.transform = "translateX(100%)";
+})
+
+// setting 
+
+settingBack.addEventListener("click", () => {
+    settingCont.style.transform = "translateX(100%)";
+})
+
+gearBtn.addEventListener("click", () => {
+    settingCont.style.transform = "translateX(0%)";
+})
+
+search_backBtn.addEventListener("click", () => {
+    searchCont.style.transform = "translateX(100%)";
+    document.querySelector(".home").classList.add("active");
+    document.querySelector(".search").classList.remove("active");
+})
+
+// aside btn
+asideBtns.forEach(e => {
+    e.addEventListener("click", () => {
+        asideBtns.forEach(i => {
+            i.classList.remove("active");
+        })
+        if(e.classList.contains("search")){
+            e.classList.add("active");
+            searchCont.style.transform = "translateX(0)";
+        }
+        if(e.classList.contains("home")){
+            e.classList.add("active");
+            searchCont.style.transform = "translateX(100%)";
+        }
+    })
+})
+
 // summary
 Promise.all([
     fetch("../script/at-summ.txt")
@@ -46,7 +93,16 @@ Promise.all([
     console.log(sampleResp);
     console.log(sample2Resp)
 })
-
+Promise.all([
+    fetch("../script/at-summ.txt")
+        .then(x => x.text())
+        .then(text => {
+            readBoook.textContent = text;
+        })
+]).then(([sampleResp, sample2Resp]) => {
+    console.log(sampleResp);
+    console.log(sample2Resp)
+})
 
 
 // playing the audio
@@ -68,6 +124,12 @@ read_playBtn.addEventListener("click", () => {
     fetchFile(recommanded[0]["path"]);
 })
 
+//
+readNovel.addEventListener("click", () => {
+    readBox.style.transform = "translateX(100%)";
+    playerFrame.style.transform = "translateX(100%)";
+    readContent.style.transform = "translateX(0%)";
+})
 
 
 // pause the audio

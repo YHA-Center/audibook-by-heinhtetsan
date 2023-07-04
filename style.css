@@ -238,7 +238,10 @@
 /* end of footer section  */
 
 @media screen and (max-width:920px){
+
     .main-home-page{
+        width: 100%;
+        overflow: hidden;
         height: 100vh;
     }
     /* home goes here  */
@@ -263,6 +266,8 @@
 
 @media screen and (max-width:380px){
     .main-home-page{
+        width: 100%;
+        overflow: hidden;
         height: 100vh;
     }
     .logo{

@@ -26,9 +26,9 @@
             </div>
             <!--  -->
             <div class="col-12 order-3 order-md-2 bg-light border-md-right col-md-2 aside d-flex flex-row flex-md-column justify-content-center align-items-center justify-content-md-start">
-                <div class="home active d-flex flex-column align-items-center justify-content-center mt-0 mt-md-5 "><i class="bi bi-house"></i><span>Home</span></div>
-                <div class="search d-flex flex-column align-items-center justify-content-center mt-0 mt-md-5 mx-5 mx-md-0"><i class="bi bi-search"></i><span>Search</span></div>
-                <div class="lib d-flex flex-column align-items-center justify-content-center mt-0 mt-md-5 "><i class="bi bi-box"></i><span>Library</span></div>
+                <div class="home aside-btn active d-flex flex-column align-items-center justify-content-center mt-0 mt-md-5 "><i class="bi bi-house"></i><span>Home</span></div>
+                <div class="search aside-btn d-flex flex-column align-items-center justify-content-center mt-0 mt-md-5 mx-5 mx-md-0"><i class="bi bi-search"></i><span>Search</span></div>
+                <div class="lib aside-btn d-flex flex-column align-items-center justify-content-center mt-0 mt-md-5 "><i class="bi bi-box"></i><span>Library</span></div>
             </div>
             <!--  -->
             <div class="col-12 order-2 order-md-3 col-md-10 main">
@@ -62,23 +62,23 @@
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide py-3 px-3 d-flex flex-column align-items-center justify-content-start">
-                                    <img src="../img/recommend/atomic habit.jpg" class="shadow" alt="">
+                                    <img src="../img/recommend/atomic habit.jpg" class="shadow pic atomic-habit" alt="">
                                     <span class="mt-2">Atomic Habit</span>
                                 </div>
                                 <div class="swiper-slide py-3 px-3 d-flex flex-column align-items-center justify-content-start">
-                                    <img src="../img/recommend/fourth wing.jpg" class="shadow" alt="">
+                                    <img src="../img/recommend/fourth wing.jpg" class="shadow pic fourth-wing" alt="">
                                     <span class="mt-2">Fourth Wing</span>
                                 </div>
                                 <div class="swiper-slide py-3 px-3 d-flex flex-column align-items-center justify-content-start">
-                                    <img src="../img/recommend/harry potter.jpg" class="shadow" alt="">
+                                    <img src="../img/recommend/harry potter.jpg" class="shadow pic harry-potter" alt="">
                                     <span class="mt-2">Harry Potter</span>
                                 </div>
                                 <div class="swiper-slide py-3 px-3 d-flex flex-column align-items-center justify-content-start">
-                                    <img src="../img/recommend/lessons in chemistry.jpg" class="shadow" alt="">
+                                    <img src="../img/recommend/lessons in chemistry.jpg" class="shadow pic lessons-in-chemistry" alt="">
                                     <span class="mt-2">Lessons in Chemistry</span>
                                 </div>
                                 <div class="swiper-slide py-3 px-3 d-flex flex-column align-items-center justify-content-start">
-                                    <img src="../img/recommend/power.jpg" class="shadow" alt="">
+                                    <img src="../img/recommend/power.jpg" class="shadow pic power" alt="">
                                     <span class="mt-2">Power</span>
                                 </div>
                             </div>
@@ -101,7 +101,7 @@
                                     <img src="../img/best seller/bs1.jpg" class="pic mb-3" alt="">
                                     <h3>It Ends with Us</h3>
                                     <span>Collen Hoover</span>
-                                    <div class="star d-flex justify-content-center align-items-center">
+                                    <div class="star d-flex justify-content-center align-items-center text-warning">
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
@@ -114,7 +114,7 @@
                                     <img src="../img/best seller/bs2.jpg" class="pic mb-3" alt="">
                                     <h3>Lessons in Chemistry</h3>
                                     <span>Bonnie Garmus</span>
-                                    <div class="star d-flex justify-content-center align-items-center">
+                                    <div class="star d-flex justify-content-center align-items-center text-warning">
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
@@ -127,7 +127,7 @@
                                     <img src="../img/best seller/bs3.jpg" class="pic mb-3" alt="">
                                     <h3>It Starts with Us</h3>
                                     <span>Collen Hoover</span>
-                                    <div class="star d-flex justify-content-center align-items-center">
+                                    <div class="star d-flex justify-content-center align-items-center text-warning">
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
@@ -140,7 +140,7 @@
                                     <img src="../img/best seller/bs4.jpg" class="pic mb-3" alt="">
                                     <h3>Lords Of the Rings</h3>
                                     <span>J.R.R Tolkien</span>
-                                    <div class="star d-flex justify-content-center align-items-center">
+                                    <div class="star d-flex justify-content-center align-items-center text-warning">
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
@@ -153,7 +153,7 @@
                                     <img src="../img/best seller/bs5.jpg" class="pic mb-3" alt="">
                                     <h3>It Ends with Us</h3>
                                     <span>Collen Hoover</span>
-                                    <div class="star d-flex justify-content-center align-items-center">
+                                    <div class="star d-flex justify-content-center align-items-center text-warning">
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
@@ -233,12 +233,237 @@
                 <div class="mb-5"></div>
                 <!--  -->
             </div>
+            <!--player  -->
+            <div class="col-12 col-md-10 play">
+                <div class="play-scroll">
+                    <div class="col-12 d-flex align-items-center justify-content-between px-3 py-2 backbtn">
+                        <div class="d-flex">
+                        <i class="bi bi-box-arrow-in-right for-play mb-4 me-2"></i><p> <span class="">Atomic Habit</span></p>
+                        </div>
+                        <div class="">
+                            <i class="bi bi-x-circle"></i>
+                        </div>
+                    </div>
+                    <div class="mb-3 col-12 d-flex align-items-center justify-content-center img-box flex-column">
+                        <img src="../img/recommend/atomic habit.jpg " class="shadow" alt="">
+                        <h3 class="title mt-3">Atomic Habit</h3>
+                        <span class="author">James Clear</span>
+                    </div>
+                    <div class="col-12 control-box d-flex align-items-center justify-content-center flex-column">
+                        <input type="range" class="mb-3">
+                        <div class="time-box d-flex align-items-center justify-content-between">
+                            <span class="start">00:00</span>
+                            <span class="end">00:00</span>
+                        </div>
+                        <div class="remote-box d-flex align-items-center justify-content-between position-relative">
+                            <i class="bi bi-volume-up"></i>
+                            <div class="remote-btns d-flex align-items-center justify-content-center">
+                                <i class="bi bi-chevron-bar-left"></i>
+                                <i class="bi bi-play-circle mx-3"></i>
+                                <i class="bi bi-pause-circle mx-3 d-none"></i>
+                                <i class="bi bi-chevron-bar-right"></i>
+                            </div>
+                            <i class="bi bi-shuffle"></i>
+                            <div class="volume shadow d-none">
+                                <input type="range" name="" value="80" id="range" min="0" max="100" onchange="changeVolume()">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5"></div>
+                </div>
+            </div>
             <!--  -->
-            <div class="col-10 play"></div>
+            <div class="col-12 col-md-10 read">
+                <div class="read-scroll">
+                    <div class="col-12 d-flex align-items-center justify-content-start px-3 py-2 backbtn">
+                        <i class="bi bi-box-arrow-in-right for-read mb-4 me-2"></i><p> <span class="">Atomic Habit</span></p>
+                    </div>
+                    <div class="mb-3 col-12 d-flex align-items-center justify-content-center img-box flex-column">
+                        <img src="../img/recommend/atomic habit.jpg " class="shadow" alt="">
+                        <h3 class="title mt-3">Atomic Habit</h3>
+                        <span class="author">James Clear</span>
+                        <div class="star d-flex justify-content-center align-items-center mb-3">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <div class="btn-gp d-flex align-items-center justify-content-center mb-3">
+                            <button class="play-audio d-flex align-items-center justify-content-center me-3"><i class="bi bi-play-circle me-2"></i> Play Audio</button>
+                            <button class="read-book d-flex align-items-center justify-content-center"><i class="bi bi-journal me-2"></i> Read Book</button>
+                        </div>
+                        <h3 class="summ">Summary</h3>
+                        <div class="summ-content px-3 px-md-5">
+<!--  -->
+                        </div>
+                        <div class="mb-5"></div>
+                        <div class="mb-5"></div>
+                    </div>
+                </div>
+            </div>
             <!--  -->
-            <div class="col-10 read"></div>
+            <!--  -->
+            <div class="col-12 col-md-10 read-content">
+                <div class="read-scroll">
+                    <div class="col-12 d-flex align-items-center justify-content-start px-3 py-2 backbtn">
+                        <i class="bi bi-box-arrow-in-right for-read-content mb-4 me-2"></i><p> <span class="">Atomic Habit</span></p>
+                    </div>
+                    <div class="mb-3 col-12 d-flex align-items-center justify-content-center img-box flex-column">
+                        <h3 class="summ">Atomic Habit</h3>
+                        <div class="summ-content px-3 px-md-5">
+                            <!--  -->
+                        </div>
+                        <div class="mb-5"></div>
+                        <div class="mb-5"></div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <!--  -->
+            <div class="col-12 col-md-10 search-box ">
+                <div class="search-scroll  px-3 px-md-5">
+                    <div class="col-12 d-flex align-items-center justify-content-start backbtn">
+                        <i class="bi bi-box-arrow-in-right for-search mb-4 me-2"></i><p> <span class="">Search</span></p>
+                    </div>
+                    <div class="col-12 d-flex align-items-center justify-content-start backbtn">
+                        <p> <span class="explore">Explore</span></p>
+                    </div>
+                    <div class="col-12 d-flex align-items-center justify-content-start mb-3">
+                        <input type="text" placeholder="Search Book or Author" class="srch">
+                    </div>
+                    <div class="col-12 d-flex align-items-center justify-content-start backbtn">
+                        <p> <span class="rc">Recommanded Category</span></p>
+                    </div>
+                    <!--  -->
+                    <div class="row">
+                        <div class="col-12 d-flex flex-wrap">
+                            <div class="col-6 col-md-3 px-1 px-md-4 py-2 py-md-0">
+                                <div class="b1 d-flex align-items-center justify-content-center shadow">
+                                    <i class="bi bi-graph-up me-3 mb-2"></i>Business
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 px-1 px-md-4 py-2 py-md-0">
+                                <div class="b1 d-flex align-items-center justify-content-center shadow">
+                                    <i class="bi bi-person me-3 mb-2"></i>Personal
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 px-1 px-md-4 py-2 py-md-0">
+                                <div class="b1 d-flex align-items-center justify-content-center shadow">
+                                    <i class="bi bi-play-circle me-3 mb-2"></i>Music
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 px-1 px-md-4 py-2 py-md-0">
+                                <div class="b1 d-flex align-items-center justify-content-center shadow">
+                                    <i class="bi bi-camera me-3 mb-2"></i>Photography
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-12 d-flex align-items-center justify-content-start py-2 backbtn">
+                        <span class="ls-srch">Latest Search</span></p>
+                    </div>
+                    <div class="mb-3 col-12 d-flex align-items-center justify-content-center latest-srch flex-column">
+                        <!--  -->
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide py-3 px-3 d-flex flex-column align-items-center justify-content-start">
+                                    <img src="../img/recommend/atomic habit.jpg" class="shadow pic atomic-habit" alt="">
+                                    <span class="mt-2">Atomic Habit</span>
+                                </div>
+                                <div class="swiper-slide py-3 px-3 d-flex flex-column align-items-center justify-content-start">
+                                    <img src="../img/recommend/fourth wing.jpg" class="shadow pic fourth-wing" alt="">
+                                    <span class="mt-2">Fourth Wing</span>
+                                </div>
+                                <div class="swiper-slide py-3 px-3 d-flex flex-column align-items-center justify-content-start">
+                                    <img src="../img/recommend/harry potter.jpg" class="shadow pic harry-potter" alt="">
+                                    <span class="mt-2">Harry Potter</span>
+                                </div>
+                                <div class="swiper-slide py-3 px-3 d-flex flex-column align-items-center justify-content-start">
+                                    <img src="../img/recommend/lessons in chemistry.jpg" class="shadow pic lessons-in-chemistry" alt="">
+                                    <span class="mt-2">Lessons in Chemistry</span>
+                                </div>
+                                <div class="swiper-slide py-3 px-3 d-flex flex-column align-items-center justify-content-start">
+                                    <img src="../img/recommend/power.jpg" class="shadow pic power" alt="">
+                                    <span class="mt-2">Power</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+                <div class="mb-5"></div>
+                <div class="mb-5"></div>
+                <div class="mb-5"></div>
+                <div class="mb-5"></div>
+                <div class="mb-5"></div>
+            </div>
+            <!--  -->
+            <!--  -->
+            <div class="col-12 col-md-10 setting-box">
+                <div class="setting-scroll">
+                    <div class="col-12 d-flex align-items-center justify-content-between backbtn">
+                        <i class="bi bi-box-arrow-in-right for-setting mb-4 me-2"></i><p> <span class="">Setting</span></p>
+                    </div>
+                    <div class="px-3 py-2 mb-3 border-top col-12 d-flex align-items-center justify-content-center" style="background-color: #fff;">
+                        <div class="profile d-flex align-items-center justify-content-start px-3 py-3">
+                            <img src="../img/user.jpg" class="me-3 user" alt="">
+                            <div class="profile-title">
+                                <h3>John Doe</h3>
+                                <span><a href="">View Profile</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 py-2 border-top col-12 d-flex align-items-center justify-content-center" style="background-color: #fff;">
+                        <div class="profile d-flex align-items-center justify-content-start px-3 py-3">
+                            <span>Notifications</span>
+                        </div>
+                    </div>
+                    <div class="px-3 mb-3 py-2 border-top col-12 d-flex align-items-center justify-content-center" style="background-color: #fff;">
+                        <div class="profile d-flex align-items-center justify-content-start px-3 py-3">
+                            <span>Data & Storage</span>
+                        </div>
+                    </div>
+
+                    <div class="px-3 py-2 border-top col-12 d-flex align-items-center justify-content-center" style="background-color: #fff;">
+                        <div class="profile d-flex align-items-center justify-content-start px-3 py-3">
+                            <span>Subscription</span>
+                        </div>
+                    </div>
+                    <div class="px-3 mb-3 py-2 border-top col-12 d-flex align-items-center justify-content-center" style="background-color: #fff;">
+                        <div class="profile d-flex align-items-center justify-content-start px-3 py-3">
+                            <span>Linked Account</span>
+                        </div>
+                    </div>
+                    
+                    <div class="px-3 py-2 border-top col-12 d-flex align-items-center justify-content-center" style="background-color: #fff;">
+                        <div class="profile d-flex align-items-center justify-content-start px-3 py-3">
+                            <span>About AudioBook</span>
+                        </div>
+                    </div>
+                    <div class="px-3 py-2 border-top col-12 d-flex align-items-center justify-content-center" style="background-color: #fff;">
+                        <div class="profile-footer d-flex align-items-center justify-content-center px-3 py-3">
+                            <a href="../index.html" class="logout">Log out</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mb-5"></div>
+                <div class="mb-5"></div>
+                <div class="mb-5"></div>
+                <div class="mb-5"></div>
+                <div class="mb-5"></div>
+            </div>
             <!--  -->
         </div>
+
+        <!--  -->
+        <div class="music-btn">
+            <i class="bi bi-music-note-beamed"></i>
+        </div>
+        <!--  -->
+
     </div>
 
 
@@ -257,5 +482,6 @@
     },
   });
 </script>
+<script src="../js/main.js"></script>
 </body>
 </html>
